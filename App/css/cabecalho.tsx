@@ -12,10 +12,12 @@ const cabecalho = StyleSheet.create({
     title: {
       backgroundColor: '#136935',
       color: 'white',
-      paddingVertical: 25, // Ajuste conforme necessário para o espaçamento interno
-      paddingHorizontal: 20, // Ajuste conforme necessário para o espaçamento interno
+      paddingVertical: 20, // Ajuste conforme necessário para o espaçamento interno
       fontSize: 30,
+      textAlign: 'center',
     },
+
+    
   });
 
   export default cabecalho;
