@@ -3,12 +3,16 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import cabecalho from "./css/cabecalho";
 import { Button } from './button/button';
+import { Bicicleta } from "./images/bicicleta";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={cabecalho.div1}></View>
       <Text style={cabecalho.title}>IPCA Mobility Systems</Text>
+      <View style={{alignItems:'center'}}>
+        <Bicicleta/>
+      </View>
       <View style={{flex:1, justifyContent:'flex-end', paddingBottom:50, width: '100%',}}>
         <Button />
       </View>
@@ -26,7 +30,6 @@ const styles = StyleSheet.create({
     paddingTop: 50, // Ajuste conforme necessário para o espaçamento do topo
     paddingHorizontal: 25, // Ajuste conforme necessário para o espaçamento lateral
   },
-
 
 });
 
