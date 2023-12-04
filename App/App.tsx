@@ -3,7 +3,6 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import cabecalho from "./css/cabecalho";
 import { Button } from './button/button';
-import { Bicicleta } from "./images/bicicleta";
 
 export default function App() {
   return (
@@ -11,11 +10,11 @@ export default function App() {
       <View style={cabecalho.div1}></View>
       <Text style={cabecalho.title}>IPCA Mobility Systems</Text>
       <View style={{alignItems:'center'}}>
-        <Bicicleta/>
       </View>
       <View style={{flex:1, justifyContent:'flex-end', paddingBottom:50, width: '100%',}}>
         <Button />
       </View>
+      {/* <Image source={require('./src/img/bike_imagem.png')}/> */}
       <StatusBar style="light" />
     </View>
   );
