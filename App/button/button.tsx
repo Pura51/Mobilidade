@@ -2,10 +2,10 @@ import React from "react";
 import { TouchableOpacity, Text, StyleSheet} from "react-native";
 
 
-export function Button(){
+export function ButtonIniciar(){
     return (
         <TouchableOpacity style={button.container}>
-            <Text  style={button.title}>Iniciar</Text>
+            <Text style={button.title}>Iniciar</Text>
         </TouchableOpacity>
     );
 }
