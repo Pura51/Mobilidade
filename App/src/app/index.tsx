@@ -1,11 +1,11 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, } from 'react-native';
-import cabecalho from "./css/cabecalho";
-import { ButtonIniciar } from './button/button';
-import { Image } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
+import cabecalho from "../css/cabecalho";
+import { ButtonIniciar } from "../css/button_iniciar";
+import { Link } from 'expo-router';
 
-export default function App() {
+export default function Home() {
   return (
     <View style={styles.container}>
       <View style={cabecalho.div1}></View>
@@ -15,13 +15,14 @@ export default function App() {
       <View>
         <Image
         style={{marginTop: 150, width: 400, height: 300, marginLeft: 13,}}
-        source={require('./images/bike_image.png')}
+        source={require('../Images/bike_image.png')}
         />
-      </View>
+      </View> 
       <View style={{flex:1, justifyContent:'flex-end', paddingBottom:50, width: '100%',}}>
-        <ButtonIniciar/>
-      </View>
-      {/* <Image source={require('./src/img/bike_imagem.png')}/> */}
+        <Link href="/log_in" asChild>
+            <ButtonIniciar title='Iniciar'/> 
+        </Link>
+        </View>
       <StatusBar style="light" />
     </View>
   );
