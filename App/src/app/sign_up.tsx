@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, ImageBackground} from 'react-native';
 import cabecalho from "../css/cabecalho";
 import { Link } from 'expo-router';
 import { ButtonLogIn } from '../css/button_log_in';
-import Log from '../css/Input';
+import Formulario from '../css/Formulário';
 
 
 const image = '../Images/path.png';
@@ -20,23 +20,15 @@ export default function Home() {
         <View style={styles.container}>
           <Text style={cabecalho.title}>IPCA Mobility Systems</Text>
 
-          <View style={{flex:1, width: '100%', paddingTop:'30%'}}>
+          <View style={{flex:1, width: '100%', paddingTop:'12%'}}>
             
-            <Text style={styles.title}>Log-In</Text>  
+            <Text style={styles.title}>Sign Up</Text>  
 
-            <Log></Log>
-            <View style={{paddingTop:'15%'}}>
-              <Link href="/start1" asChild>
-                  <ButtonLogIn title='Log-in'/> 
+            <Formulario></Formulario>
+            <View style={{paddingTop:'5%'}}>
+              <Link href="/log_in" asChild>
+                  <ButtonLogIn title='Sign Up'/> 
               </Link>
-            </View>
-
-            <View style={{alignItems:'center'}}>
-              <Text style={styles.text}>Não tens conta?    
-              <Link href={'/sign_up'}>        
-              <Text>           Sign Up</Text> 
-              </Link>  
-              </Text>
             </View>
 
           </View>

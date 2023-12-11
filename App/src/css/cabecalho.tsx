@@ -1,23 +1,24 @@
 import { StyleSheet } from 'react-native';
 
 
+
+
 const cabecalho = StyleSheet.create({  
-    div1: {
-      position: 'absolute',
-      width: '114%',
-      height: '18%',
-      backgroundColor: '#136935',
-      borderBottomLeftRadius: 25,
-      borderBottomRightRadius: 25,
-    },
   
     title: {
+      borderBottomLeftRadius: 25,
+      borderBottomRightRadius: 25,
+      position: 'absolute',
+      height: '18%',
+      width: '115%',
       fontWeight: 'bold',
       backgroundColor: '#136935',
       color: 'white',
-      paddingVertical:0, // Ajuste conforme necessário para o espaçamento interno
-      fontSize: 30,
+      fontSize: 32,
       textAlign: 'center',
+      textAlignVertical: 'center',
+      top: -52,
+      paddingTop: '10%',
     },
 
     

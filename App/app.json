@@ -1,5 +1,9 @@
 {
   "expo": {
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff",
+      "translucent": false
+    },
     "name": "App",
     "slug": "App",
     "scheme": "App",

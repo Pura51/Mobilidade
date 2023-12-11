@@ -23,12 +23,11 @@ export const  ButtonLogIn = forwardRef<TouchableOpacity, Props>(({title, ...rest
 
 const button = StyleSheet.create({
     container:{
-        padding: 15,
+        padding: '5%',
         backgroundColor: "#136935",
-        alignContent: 'center',
-        justifyContent: 'center',
         borderRadius: 25,
     },
+
     title:{
         color: 'white',
         fontSize: 20,

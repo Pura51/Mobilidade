@@ -9,12 +9,6 @@ export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={cabecalho.title}>IPCA Mobility Systems</Text>
-      <View>
-        <Image
-        style={{marginTop: 150, width: 400, height: 300, marginLeft: 13,}}
-        source={require('../Images/bike_image.png')}
-        />
-      </View> 
       <View style={{flex:1, justifyContent:'flex-end', paddingBottom:50, width: '100%',}}>
         <Link href="/log_in" asChild>
             <ButtonIniciar title='Iniciar'/> 
