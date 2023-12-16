@@ -174,45 +174,46 @@ input:checked ~ .slide{
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
-.container{
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Impact', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100vw; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 70%;
-    background-color: rgb(19, 105, 53);
-    padding: 2px 0;
-    border-radius: 5px;
-    -webkit-box-shadow: 3px 3px 3px 3px rgba(50,50,50,0.77);
-    -moz-box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, 0.77);
-    box-shadow: 3px 3px 3px 3px rgba(50,50, 50, 0.77);
+.container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: rgb(19, 105, 53);
+  padding: 2px 0;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, 0.77);
+  margin: 100px auto ; /* Adiciona margem superior de 20 pixels e margens automáticas nos lados */
 }
 
+
+
+
 .container table{
-  width: 100%;
-  max-width: 800px;
+  /* width: 100%;*/
+  max-width: 100px; 
   border-collapse: collapse;
 }
 
 .container table tr th{
+  border-bottom: 3px solid #c8cacc;
+  padding: 0 100px;
   height: 56px;
-  font-size:16px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: .25px;
-  padding: 0 10px;
+  color: #fff;
+  text-align: left;
 }
 
 .container table tr.item td{
   border-bottom: 1px solid #c8cacc;
-  padding: 0 10px;
+  padding: 0 100px;
+  color: #fff;
+  text-align: left;
 }
 
 .container table tr.item{
@@ -239,8 +240,8 @@ input:checked ~ .slide{
    align-items: center;
    justify-content: center;
    cursor: pointer;
-   color: aliceblue;
-   border: 2px solid aliceblue;
+   color: #EDEDED;
+   border: 2px solid #EDEDED;
    background-color: transparent;
    padding: 8px 10px;
    min-height: 20px;
@@ -248,17 +249,9 @@ input:checked ~ .slide{
 
 
 .container table tr td .button:hover{
-  background-color: #dbdef6;
-}
-
-.negativo{
-  color: red;
-}
-
-.posivito{
-  color:#00a971;
+  background-color: #EDEDED;
 }
 
 .right{
-  text-align: right;
+  text-align: center;
 }
