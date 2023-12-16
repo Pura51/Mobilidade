@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
 
-body {
+html, body {
     margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
@@ -174,6 +175,43 @@ input:checked ~ .slide{
   box-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
+.search-box {
+  position: absolute;
+  top: 200px; /* Ajuste a distância do topo conforme necessário */
+  left: 84%;
+  transform: translateX(-50%);
+  background: #fff;
+  height: 35px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+}
+
+.search-text{
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #000;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.search-btn{
+  width: 40px;
+  height: 20px;
+  border-radius: 50%;
+  /* background: #fff; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  
+}
+
 .container {
   flex-direction: column;
   align-items: center;
@@ -181,36 +219,41 @@ input:checked ~ .slide{
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
   background-color: rgb(19, 105, 53);
   padding: 2px 0;
   border-radius: 5px;
   box-shadow: 3px 3px 3px 3px rgba(50, 50, 50, 0.77);
-  margin: 100px auto ; /* Adiciona margem superior de 20 pixels e margens automáticas nos lados */
+  margin: 100px auto; /* Adiciona margem superior de 20 pixels e margens automáticas nos lados */
 }
-
-
-
 
 .container table{
-  /* width: 100%;*/
   max-width: 100px; 
   border-collapse: collapse;
+  margin-bottom: 50%;
 }
 
-.container table tr th{
-  border-bottom: 3px solid #c8cacc;
+.container table tr th {
   padding: 0 100px;
   height: 56px;
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: .25px;
   color: #fff;
   text-align: left;
 }
 
+.container table tr{
+  border-bottom: 3px solid #c8cacc;
+}
+
+.container table tr td {
+  border-bottom: 1px solid #c8cacc; /* Ensure consistent border for other rows */
+  vertical-align: middle;
+  width: 20%;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
 .container table tr.item td{
-  border-bottom: 1px solid #c8cacc;
   padding: 0 100px;
   color: #fff;
   text-align: left;
@@ -255,3 +298,5 @@ input:checked ~ .slide{
 .right{
   text-align: center;
 }
+
+
