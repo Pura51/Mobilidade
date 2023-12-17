@@ -177,7 +177,7 @@ input:checked ~ .slide{
 
 .search-box {
   position: absolute;
-  top: 200px; /* Ajuste a distância do topo conforme necessário */
+  top: 200px; 
   left: 84%;
   transform: translateX(-50%);
   background: #fff;
@@ -188,7 +188,6 @@ input:checked ~ .slide{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ccc;
 }
 
 .search-text{
@@ -202,14 +201,18 @@ input:checked ~ .slide{
 }
 
 .search-btn{
-  width: 40px;
-  height: 20px;
+  display: flex;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  /* background: #fff; */
-  /* display: flex; */
   justify-content: center;
   align-items: center;
-  
+  margin-right: auto;
+}
+
+.search-box .search-text {
+  display: flex;
+  visibility: visible;
 }
 
 .container {
