@@ -198,22 +198,26 @@ input:checked ~ .slide{
   color: #000;
   font-size: 16px;
   line-height: 40px;
+  display: flex;
+  visibility: visible;
+  /* flex-grow: 1;
+  margin-right: 10px; */
 }
 
 .search-btn{
-  display: flex;
+  display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 
-.search-box .search-text {
+/* .search-box .search-text {
   display: flex;
   visibility: visible;
-}
+} */
 
 .container {
   flex-direction: column;
