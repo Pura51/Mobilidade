@@ -199,7 +199,7 @@ input:checked ~ .slide{
   font-size: 16px;
   line-height: 40px;
   display: flex;
-  visibility: visible; 
+  visibility: visible;
   /* flex-grow: 1;
   margin-right: 10px; */
 }

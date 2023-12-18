@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="clientes.css">
+    <link rel="stylesheet" href="pagamentos.css">
     <!-- ICONS -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Página Clientes</title>
+    <title>Pagamentos</title>
 </head>
 <body>
     <div class="navbar">
@@ -27,32 +27,30 @@
     
     <div class="container">
         <table>
-            <thead>
-                <tr>
-                    <th><i class="fas fa-cog"></i></th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
+            <tr>
+                <th><i class="fas fa-cog"></i></th>
+                <th>Nome do Cliente</th>
+                <th>Email do Cliente</th>
+                <th>Código da Licença</th>
                 
-                    <div class="search-box">
-                        <input type="text" class="search-text" placeholder="Pesquisar" id="celula">
-                        <!-- <a href="#" class="search-btn">
-                            <img src="images/loupe.png" alt="Lupa" height="15" width="15">
-                        </a> -->
-                    </div>
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="Pesquisar" id="celula">
+                    <!-- <a href="#" class="search-btn">
+                        <img src="images/loupe.png" alt="Lupa" height="15" width="15">
+                    </a> -->
+                </div>
                 
-                </tr>
-            </thead>
-            
+            </tr>
+
             <tbody id="tabela">
                 <tr class="item">
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Mário Gonçalves</td>
                     <td class="right">mariogon@gmail.com</td>
-                    <td class="right positivo">936458745</td>
+                    <td class="right positivo">10123</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -61,10 +59,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Alexandra Alves</td>
                     <td class="right">alexalves@hotmail.com</td>
-                    <td class="right negativo">920146321</td>
+                    <td class="right negativo">10165</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -73,10 +71,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Rui Pereira</td>
                     <td class="right">rui23pereira@gmail.com</td>
-                    <td class="right positivo">912369785</td>
+                    <td class="right positivo">10144</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -85,10 +83,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Hélder Afonso</td>
                     <td class="right">helderpafonso@outlook.pt</td>
-                    <td class="right">937005696</td>
+                    <td class="right">10102</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -97,10 +95,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Paula Martins</td>
                     <td class="right">paulamartins@gmail.com</td>
-                    <td class="right">910025369</td>
+                    <td class="right">10113</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -109,22 +107,22 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Rita Dinis</td>
                     <td class="right">ritaddinis@hotmail.com</td>
-                    <td class="right">968100245</td>
+                    <td class="right">10199</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
 
-                    <tr class="item">
+                <tr class="item">
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Luis Pereira</td>
                     <td class="right">luispereira@gmail.com</td>
-                    <td class="right">923994885</td>
+                    <td class="right">10149</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -133,10 +131,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Nuno Francisco</td>
                     <td class="right">nunofrancisco@gmail.com</td>
-                    <td class="right">913654014</td>
+                    <td class="right">10171</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -145,10 +143,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Carla Ferreira</td>
                     <td class="right">carlaferreira45@outlook.pt</td>
-                    <td class="right">919564350</td>
+                    <td class="right">10131</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -157,10 +155,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Isabel Alves </td>
                     <td class="right">isabel22alves@hotmail.com</td>
-                    <td class="right">936285174</td>
+                    <td class="right">10140</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -169,10 +167,10 @@
                     <td class="icone" onclick="toggleMenu(this)"><i class="fas fa-bars"></i></td>
                     <td>Marco Silva</td>
                     <td class="right">marcosilva@gmail.com</td>
-                    <td class="right">960147854</td>
+                    <td class="right">10192</td>
                     <td>
                         <button class="button">
-                            Consultar
+                            Detalhes
                         </button>
                     </td>
                 </tr>
@@ -200,4 +198,4 @@
 
       <script src="script.js"></script>
 </body>
-</html>A
+</html>
