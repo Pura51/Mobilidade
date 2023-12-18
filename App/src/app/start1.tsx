@@ -27,7 +27,7 @@ export default function Home() {
             <View style={{flex:1,justifyContent:'flex-end', paddingBottom:'5%', alignItems:'center'}}>
                 <View style={{flexDirection:'row'}}>
                     <View style={{paddingRight:'10%'}}>
-                        <Link href={'/perfil'}>
+                        <Link href={'/toolbar'}>
                             <Text style={styles.text2}>Skip</Text> 
                         </Link>
                     </View>
