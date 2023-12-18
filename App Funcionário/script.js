@@ -65,3 +65,40 @@ function loadContent(page) {
     xhttp.send();
   }
 }
+
+function toggleDetail(detailId) {
+  var detailElement = document.getElementById(detailId);
+  if (detailElement.style.display === "none") {
+      detailElement.style.display = "block";
+  } else {
+      detailElement.style.display = "none";
+  }
+}
+
+function toggleMenu(menu) {
+  // Se algum outro menu estiver aberto, feche-o
+  document.querySelectorAll('.menu-content').forEach(function(otherMenu) {
+      if (otherMenu !== menu) {
+          otherMenu.style.display = 'none';
+      }
+  });
+  // Mostra ou esconde o menu clicado
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+}
+
+function removeClient(clientRow) {
+  console.log("Chamada para remover o cliente", clientRow);
+  var clientId = clientRow.getAttribute('data-id');
+  if (confirm('Tem certeza que deseja remover o cliente com ID ' + clientId + '?')) {
+      clientRow.remove();
+      // Aqui você pode adicionar a lógica para atualizar o back-end se necessário
+  }
+}
+
+function editClient(clientRow) {
+  var clientId = clientRow.getAttribute('data-id');
+  alert('Abrir formulário de edição para cliente com ID ' + clientId);
+  // Implemente a lógica para preencher um formulário de edição com os dados do cliente
+  // Isso pode incluir abrir um modal e preencher os campos do formulário
+}
+

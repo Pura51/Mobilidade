@@ -323,3 +323,6 @@ input:checked ~ .slide{
 }
 
 
+.status-licença-vencida{
+  color: red;
+}
