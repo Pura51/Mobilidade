@@ -356,3 +356,24 @@ input:checked ~ .slide{
   color: red;
 }
 
+.menu-content {
+  display: none;
+  position: absolute; /* Ajuste conforme necessário */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.menu-content button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.menu-content button:hover {
+  background-color: #e2e2e2;
+}
+
