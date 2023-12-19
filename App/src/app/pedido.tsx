@@ -1,10 +1,11 @@
 import React from 'react';
-import { AntDesign,  Entypo  } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, ImageBackground} from 'react-native';
 import cabecalho from "../css/cabecalho";
 import { Link } from 'expo-router';
 import { ButtonLogIn } from '../css/button_log_in';
+import { TextInput } from 'react-native-gesture-handler';
+
 
 
 const image = '../Images/path.png';
@@ -20,30 +21,19 @@ export default function Home() {
             <Link href="/toolbar">IPCA Mobility Systems</Link>
           </Text>
         
-          
+          <Text style={{ fontSize:25, paddingTop:'25%', textAlign:'center', }}>
+            Qual o veiculo que deseja utilizar?
+          </Text>
 
-            <View style={{flexDirection:'row', paddingTop:'25%'}}>
-                <View >
-                  <AntDesign name="checkcircle" size={40} color="green" />
-                </View>
-                <Text style={{paddingLeft:'3%', fontSize:25, padding:'1%'}}>
-                    Licença 1
-                </Text>
-            </View>
-
-            <View style={{flexDirection:'row', paddingTop:'15%'}}>
-                <View >
-                <Entypo name="circle-with-cross" size={45} color="red" />
-                </View>
-                <Text style={{paddingLeft:'3%', fontSize:25, padding:'1%'}}>
-                    Licença 2
-                </Text>
+                 <Text style={styles.text}>Palavra Passe</Text>
+            <View style={{flex:1, width: '80%', paddingTop:'10%'}}>
+                <TextInput style={styles.input}/>
             </View>
 
           <View style={{flex:1, width: '100%', paddingTop:'12%'}}>
             
             <View style={{flex:1, justifyContent:'flex-end', paddingBottom:50, width: '100%',}}>
-              <Link href="/pedido" asChild>
+              <Link href="/licencas" asChild>
                   <ButtonLogIn title='Pedir Licença'/> 
               </Link>
             </View>
@@ -77,11 +67,22 @@ const styles = StyleSheet.create({
     fontSize: 50,
     },
 
-    text: {
-      color: 'white',
-      paddingVertical:0, // Ajuste conforme necessário para o espaçamento interno
-      fontSize: 20,
-      paddingTop: '10%',  
+    text:{
+        color: 'white',
+        fontSize: 25,
+        fontWeight: 'bold',
+        paddingBottom: '3%',
+        paddingLeft: '3%',
+        paddingTop: '12%',
+        
+    },
+
+    input:{
+        backgroundColor: '#136935',
+        borderRadius: 15,
+        padding: '5%',
+        fontSize: 20,
+        color: 'white',
     },
 
 });
