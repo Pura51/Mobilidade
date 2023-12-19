@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="clientes.css">
+    <link rel="stylesheet" href="pagamentos.css">
     <!-- ICONS -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Página Clientes</title>
+    <title>Pagamentos</title>
 </head>
 <body>
     <div class="navbar">
@@ -27,25 +27,23 @@
     
     <div class="container">
         <table>
-            <thead>
-                <tr>
-                    <th><i class="fas fa-cog"></i></th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
+            <tr>
+                <th><i class="fas fa-cog"></i></th>
+                <th>Nome do Cliente</th>
+                <th>Email do Cliente</th>
+                <th>Código da Licença</th>
                 
-                    <div class="search-box">
-                        <input type="text" class="search-text" placeholder="Pesquisar" id="celula">
-                        <!-- <a href="#" class="search-btn">
-                            <img src="images/loupe.png" alt="Lupa" height="15" width="15">
-                        </a> -->
-                    </div>
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="Pesquisar" id="celula">
+                    <!-- <a href="#" class="search-btn">
+                        <img src="images/loupe.png" alt="Lupa" height="15" width="15">
+                    </a> -->
+                </div>
                 
-                </tr>
-            </thead>
-            
+            </tr>
+
             <tbody id="tabela">
-                <tr class="item", data-id="10123">
+                <tr class="item", data-id="50">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -55,19 +53,18 @@
                     </td>
                     <td>Mário Gonçalves</td>
                     <td class="right">mariogon@gmail.com</td>
-                    <td class="right positivo">936458745</td>
+                    <td class="right positivo">10123</td>
                     <td>
-                        <button class="button" onclick="toggleDetail('detail1')">
-                            Consultar
-                        </button>
-                        <div id="detail1" class="detail-info" style="display: none;">
-                            <p>18 anos</p>
-                            <p>Rua de Folões, 4755-104 </p>
+                        <div>
+                            <button class="button" onclick="toggleDetail('detail1')"> Detalhes </button>
+                            <div id="detail1" class="detail-info" style="display: none;">
+                                <p class="status-atraso">Pagamento em atraso</p>
+                            </div>
                         </div>
                     </td>
                 </tr>
             
-                <tr class="item", data-id="10165">
+                <tr class="item", data-id="51">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -77,19 +74,19 @@
                     </td>
                     <td>Alexandra Alves</td>
                     <td class="right">alexalves@hotmail.com</td>
-                    <td class="right negativo">920146321</td>
+                    <td class="right negativo">10165</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail2')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail2" class="detail-info" style="display: none;">
-                            <p>22 anos</p>
-                            <p>Praceta da Águia, 4750-104</p>
+                            <p class="status-pago">Pagamento em dia</p>
+                            <p>MbWay</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10144">
+                <tr class="item", data-id="52">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -99,19 +96,18 @@
                     </td>
                     <td>Rui Pereira</td>
                     <td class="right">rui23pereira@gmail.com</td>
-                    <td class="right positivo">912369785</td>
+                    <td class="right positivo">10144</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail3')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail3" class="detail-info" style="display: none;">
-                            <p>19 anos</p>
-                            <p>Rua do Montinho, 4750-770</p>
+                            <p class="status-atraso">Pagamento em atraso</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10102">
+                <tr class="item", data-id="53">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -121,19 +117,19 @@
                     </td>
                     <td>Hélder Afonso</td>
                     <td class="right">helderpafonso@outlook.pt</td>
-                    <td class="right">937005696</td>
+                    <td class="right">10102</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail4')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail4" class="detail-info" style="display: none;">
-                            <p>21 anos</p>
-                            <p>Rua de Quintão, 4750-771</p>
+                            <p class="status-pago">Pagamento em dia</p>
+                            <p>Transferência Bancária</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10113">
+                <tr class="item", data-id="54">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -143,19 +139,18 @@
                     </td>
                     <td>Paula Martins</td>
                     <td class="right">paulamartins@gmail.com</td>
-                    <td class="right">910025369</td>
+                    <td class="right">10113</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail5')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail5" class="detail-info" style="display: none;">
-                            <p>25 anos</p>
-                            <p>Travessa da Garrida, 4710-771</p>
+                            <p class="status-atraso">Pagamento em atraso</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10199">
+                <tr class="item", data-id="55">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -165,41 +160,39 @@
                     </td>
                     <td>Rita Dinis</td>
                     <td class="right">ritaddinis@hotmail.com</td>
-                    <td class="right">968100245</td>
+                    <td class="right">10199</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail6')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail6" class="detail-info" style="display: none;">
-                            <p>23 anos</p>
-                            <p>Rua do Paço, 4710-640</p>
+                            <p class="status-atraso">Pagamento em atraso</p>
                         </div>
                     </td>
                 </tr>
 
-                    <tr class="item", data-id="10149">
-                        <td class="icone">
-                            <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
-                            <div class="menu-content" style="display:none;">
-                                <button onclick="removeClient(this.parentElement.parentElement)">Remover</button>
-                                <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
-                            </div>
-                        </td>
+                <tr class="item", data-id="56">
+                    <td class="icone">
+                        <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
+                        <div class="menu-content" style="display:none;">
+                            <button onclick="removeClient(this.parentElement.parentElement)">Remover</button>
+                            <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
+                        </div>
+                    </td>
                     <td>Luis Pereira</td>
                     <td class="right">luispereira@gmail.com</td>
-                    <td class="right">923994885</td>
+                    <td class="right">10149</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail7')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail7" class="detail-info" style="display: none;">
-                            <p>18 anos</p>
-                            <p>Caminho da Casa Florestal, 4720-640</p>
+                            <p class="status-atraso">Pagamento em atraso</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10171">
+                <tr class="item", data-id="57">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -209,19 +202,19 @@
                     </td>
                     <td>Nuno Francisco</td>
                     <td class="right">nunofrancisco@gmail.com</td>
-                    <td class="right">913654014</td>
+                    <td class="right">10171</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail8')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail8" class="detail-info" style="display: none;">
-                            <p>22 anos</p>
-                            <p>Rua Maria do Céu Vilhena da Cunha, 4730-770</p>
+                            <p class="status-pago">Pagamento em dia</p>
+                            <p>Referência Multibanco</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10131">
+                <tr class="item", data-id="58">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -231,19 +224,18 @@
                     </td>
                     <td>Carla Ferreira</td>
                     <td class="right">carlaferreira45@outlook.pt</td>
-                    <td class="right">919564350</td>
+                    <td class="right">10131</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail9')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail9" class="detail-info" style="display: none;">
-                            <p>20 anos</p>
-                            <p>Rua da Agra Pequena, 4740-102</p>
+                            <p class="status-atraso">Pagamento em atraso</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10140">
+                <tr class="item", data-id="59">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -251,21 +243,21 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Isabel Alves</td>
+                    <td>Isabel Alves </td>
                     <td class="right">isabel22alves@hotmail.com</td>
-                    <td class="right">936285174</td>
+                    <td class="right">10140</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail10')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail10" class="detail-info" style="display: none;">
-                            <p>24 anos</p>
-                            <p>Rua Adelina Caravana, 4710-500</p>
+                            <p class="status-pago">Pagamento em dia</p>
+                            <p>MbWay</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10192">
+                <tr class="item", data-id="60">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -275,14 +267,14 @@
                     </td>
                     <td>Marco Silva</td>
                     <td class="right">marcosilva@gmail.com</td>
-                    <td class="right">960147854</td>
+                    <td class="right">10192</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail11')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail11" class="detail-info" style="display: none;">
-                            <p>28 anos</p>
-                            <p>Travessa do Fidalgo,4750-700</p>
+                            <p class="status-pago">Pagamento em dia</p>
+                            <p>Transferência Bancária</p>
                         </div>
                     </td>
                 </tr>
@@ -309,5 +301,6 @@
       </label>
 
       <script src="script.js"></script>
+
 </body>
-</html>A
+</html>

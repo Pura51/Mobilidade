@@ -199,7 +199,7 @@ input:checked ~ .slide{
   font-size: 16px;
   line-height: 40px;
   display: flex;
-  visibility: visible; 
+  visibility: visible;
   /* flex-grow: 1;
   margin-right: 10px; */
 }
@@ -322,6 +322,39 @@ input:checked ~ .slide{
   text-align: center;
 }
 
+.detail-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.detail-button:hover {
+  background-color: #45a049;
+}
+
+.detail-content {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+.detail-info {
+  display: none;
+  padding: 10px;
+  background-color: 45a049;
+  margin-top: 10px;
+}
+
+.status-pago{
+  color: white;
+}
+
+.status-atraso{
+  color: red;
+}
 
 .menu-content {
   display: none;
@@ -343,3 +376,4 @@ input:checked ~ .slide{
 .menu-content button:hover {
   background-color: #e2e2e2;
 }
+

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="clientes.css">
+    <link rel="stylesheet" href="area.css">
     <!-- ICONS -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Página Clientes</title>
+    <title>Áreas de Manutenção</title>
 </head>
 <body>
     <div class="navbar">
@@ -27,25 +27,22 @@
     
     <div class="container">
         <table>
-            <thead>
-                <tr>
-                    <th><i class="fas fa-cog"></i></th>
-                    <th>Nome</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
+            <tr>
+                <th><i class="fas fa-cog"></i></th>
+                <th>Código de Área</th>
+                <th>Funcionário Responsável</th>
+                <th>Email</th>
                 
-                    <div class="search-box">
-                        <input type="text" class="search-text" placeholder="Pesquisar" id="celula">
-                        <!-- <a href="#" class="search-btn">
-                            <img src="images/loupe.png" alt="Lupa" height="15" width="15">
-                        </a> -->
-                    </div>
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="Pesquisar" id="celula">
+                    <!-- <a href="#" class="search-btn">
+                        <img src="images/loupe.png" alt="Lupa" height="15" width="15">
+                    </a> -->
+                </div>
                 
-                </tr>
-            </thead>
-            
+            </tr>
             <tbody id="tabela">
-                <tr class="item", data-id="10123">
+                <tr class="item", data-id="25014">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -53,21 +50,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Mário Gonçalves</td>
-                    <td class="right">mariogon@gmail.com</td>
-                    <td class="right positivo">936458745</td>
+                    <td>25014</td>
+                    <td class="right">Beatriz Monteiro</td>
+                    <td class="right">beatrizmonteiro@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail1')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail1" class="detail-info" style="display: none;">
-                            <p>18 anos</p>
-                            <p>Rua de Folões, 4755-104 </p>
+                            <p class="status-localização">Rua de Medela 4750-770</p>
                         </div>
                     </td>
                 </tr>
-            
-                <tr class="item", data-id="10165">
+
+                <tr class="item", data-id="25065">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -75,21 +71,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Alexandra Alves</td>
-                    <td class="right">alexalves@hotmail.com</td>
-                    <td class="right negativo">920146321</td>
+                    <td>25065</td>
+                    <td class="right">Pedro Rodrigues</td>
+                    <td class="right">pedrorodrigues@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail2')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail2" class="detail-info" style="display: none;">
-                            <p>22 anos</p>
-                            <p>Praceta da Águia, 4750-104</p>
+                            <p class="status-localização">Rua Dom Afonso Henriques 4750-103</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10144">
+                <tr class="item", data-id="25089">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -97,21 +92,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Rui Pereira</td>
-                    <td class="right">rui23pereira@gmail.com</td>
-                    <td class="right positivo">912369785</td>
+                    <td>25089</td>
+                    <td class="right">Gustavo Herrera</td>
+                    <td class="right">gustavoherrera@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail3')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail3" class="detail-info" style="display: none;">
-                            <p>19 anos</p>
-                            <p>Rua do Montinho, 4750-770</p>
+                            <p class="status-localização">Rua do Rápido 4755-103</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10102">
+                <tr class="item", data-id="25014">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -119,21 +113,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Hélder Afonso</td>
-                    <td class="right">helderpafonso@outlook.pt</td>
-                    <td class="right">937005696</td>
+                    <td>25014</td>
+                    <td class="right">Filipe Barbosa</td>
+                    <td class="right">filipebarbosa@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail4')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail4" class="detail-info" style="display: none;">
-                            <p>21 anos</p>
-                            <p>Rua de Quintão, 4750-771</p>
+                            <p class="status-localização">Rua das Cartas 4755-402</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10113">
+                <tr class="item", data-id="25066">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -141,21 +134,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Paula Martins</td>
-                    <td class="right">paulamartins@gmail.com</td>
-                    <td class="right">910025369</td>
+                    <td>25066</td>
+                    <td class="right">Vânia Carneiro</td>
+                    <td class="right">vaniacarneiro@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail5')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail5" class="detail-info" style="display: none;">
-                            <p>25 anos</p>
-                            <p>Travessa da Garrida, 4710-771</p>
+                            <p class="status-localização">Rua de Pai Mouro 4755-420</p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10199">
+                <tr class="item", data-id="25072">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -163,43 +155,41 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Rita Dinis</td>
-                    <td class="right">ritaddinis@hotmail.com</td>
-                    <td class="right">968100245</td>
+                    <td>25072</td>
+                    <td class="right">Joelma Leite</td>
+                    <td class="right">joelmaleite@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail6')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail6" class="detail-info" style="display: none;">
-                            <p>23 anos</p>
-                            <p>Rua do Paço, 4710-640</p>
+                            <p class="status-localização">Rua de Pai Mouro 4755-420</p>
                         </div>
                     </td>
                 </tr>
 
-                    <tr class="item", data-id="10149">
-                        <td class="icone">
-                            <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
-                            <div class="menu-content" style="display:none;">
-                                <button onclick="removeClient(this.parentElement.parentElement)">Remover</button>
-                                <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
-                            </div>
-                        </td>
-                    <td>Luis Pereira</td>
-                    <td class="right">luispereira@gmail.com</td>
-                    <td class="right">923994885</td>
+                <tr class="item", data-id="25050">
+                    <td class="icone">
+                        <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
+                        <div class="menu-content" style="display:none;">
+                            <button onclick="removeClient(this.parentElement.parentElement)">Remover</button>
+                            <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
+                        </div>
+                    </td>
+                    <td>25050</td>
+                    <td class="right">Raquel Lopes</td>
+                    <td class="right">raquellopes@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail7')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail7" class="detail-info" style="display: none;">
-                            <p>18 anos</p>
-                            <p>Caminho da Casa Florestal, 4720-640</p>
+                            <p class="status-localização">Rua Pedro Barcelos 4750-325 </p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10171">
+                <tr class="item", data-id="25083">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -207,21 +197,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Nuno Francisco</td>
-                    <td class="right">nunofrancisco@gmail.com</td>
-                    <td class="right">913654014</td>
+                    <td>25083</td>
+                    <td class="right">António Bravo</td>
+                    <td class="right">antoniobravo@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail8')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail8" class="detail-info" style="display: none;">
-                            <p>22 anos</p>
-                            <p>Rua Maria do Céu Vilhena da Cunha, 4730-770</p>
+                            <p class="status-localização"> Rodoviária de Barcelos 4755-007 </p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10131">
+                <tr class="item", data-id="25075">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -229,21 +218,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Carla Ferreira</td>
-                    <td class="right">carlaferreira45@outlook.pt</td>
-                    <td class="right">919564350</td>
+                    <td>25075</td>
+                    <td class="right">Catia Luisa</td>
+                    <td class="right">catialuisa@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail9')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail9" class="detail-info" style="display: none;">
-                            <p>20 anos</p>
-                            <p>Rua da Agra Pequena, 4740-102</p>
+                            <p class="status-localização">Rua de Santo António 4750-665 </p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10140">
+                <tr class="item", data-id="25019">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -251,21 +239,20 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Isabel Alves</td>
-                    <td class="right">isabel22alves@hotmail.com</td>
-                    <td class="right">936285174</td>
+                    <td>25019</td>
+                    <td class="right">Bárbara Cristina</td>
+                    <td class="right">barbaracristina@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail10')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail10" class="detail-info" style="display: none;">
-                            <p>24 anos</p>
-                            <p>Rua Adelina Caravana, 4710-500</p>
+                            <p class="status-localização">Rua da Gândara 4750-400 </p>
                         </div>
                     </td>
                 </tr>
 
-                <tr class="item", data-id="10192">
+                <tr class="item", data-id="25091">
                     <td class="icone">
                         <i class="fas fa-bars"  onclick="toggleMenu(this.nextElementSibling)"></i>
                         <div class="menu-content" style="display:none;">
@@ -273,16 +260,15 @@
                             <button onclick="editClient(this.parentElement.parentElement)">Alterar</button>
                         </div>
                     </td>
-                    <td>Marco Silva</td>
-                    <td class="right">marcosilva@gmail.com</td>
-                    <td class="right">960147854</td>
+                    <td>25091</td>
+                    <td class="right">Bernardo Pinheiro</td>
+                    <td class="right">bernardopinheiro@sas.ipca.pt</td>
                     <td>
                         <button class="button" onclick="toggleDetail('detail11')">
-                            Consultar
+                            Detalhes
                         </button>
                         <div id="detail11" class="detail-info" style="display: none;">
-                            <p>28 anos</p>
-                            <p>Travessa do Fidalgo,4750-700</p>
+                            <p class="status-localização">Rua do Fidalgo do Monte 4755-104 </p>
                         </div>
                     </td>
                 </tr>
@@ -310,4 +296,4 @@
 
       <script src="script.js"></script>
 </body>
-</html>A
+</html>

@@ -322,7 +322,6 @@ input:checked ~ .slide{
   text-align: center;
 }
 
-
 .menu-content {
   display: none;
   position: absolute; /* Ajuste conforme necessário */
@@ -343,3 +342,5 @@ input:checked ~ .slide{
 .menu-content button:hover {
   background-color: #e2e2e2;
 }
+
+

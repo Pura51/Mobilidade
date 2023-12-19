@@ -199,7 +199,7 @@ input:checked ~ .slide{
   font-size: 16px;
   line-height: 40px;
   display: flex;
-  visibility: visible; 
+  visibility: visible;
   /* flex-grow: 1;
   margin-right: 10px; */
 }
@@ -322,6 +322,10 @@ input:checked ~ .slide{
   text-align: center;
 }
 
+
+.status-licença-vencida{
+  color: red;
+}
 
 .menu-content {
   display: none;
